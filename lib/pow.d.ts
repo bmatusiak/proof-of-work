@@ -1,7 +1,11 @@
 import { Buffer } from 'buffer';
 
+export interface ISolveOptions {
+  timestamp: number;
+}
+
 export class Solver {
-  public solve(complexity: number, prefix?: Buffer): Buffer;
+  public solve(complexity: number, prefix?: Buffer, opts?: ISolveOptions): Buffer;
 }
 
 export interface IVerifierOptions {
